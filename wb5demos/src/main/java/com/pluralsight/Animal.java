@@ -1,6 +1,10 @@
 package com.pluralsight;
 
 public class Animal {
+    public void setSpecies(String species) {
+        this.species = species;
+    }
+
     private String name;
     private float weight;
     private int age;
@@ -33,6 +37,12 @@ public class Animal {
 
     public void eat(float amountOfFood){
         this.weight += amountOfFood;
+    }
+
+
+    @Override
+    public String toString(){
+        return this.name + " is my pet " + this.species;
     }
 
 }
