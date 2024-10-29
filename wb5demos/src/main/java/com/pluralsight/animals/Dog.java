@@ -1,8 +1,17 @@
-package com.pluralsight;
+package com.pluralsight.animals;
 
-public class Dog extends Animal{
+import com.pluralsight.Animal;
 
-    public Dog(){
+public class Dog extends Animal {
+
+
+    public void sayHello(){
+        bark();
+    }
+
+    public Dog(String name){
+        super(name);
+        System.out.println("TRACE -- from dog constructor");
         super.setSpecies("Dog");
     }
 
