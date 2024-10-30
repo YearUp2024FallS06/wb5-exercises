@@ -15,7 +15,7 @@ public class Main {
         vehicle2.setGasoline(true);
         vehicle2.setHasTrailer(true);
 
-        
+
 
         System.out.println(vehicle1);
         System.out.println(vehicle2);
